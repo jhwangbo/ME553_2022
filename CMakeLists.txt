@@ -29,9 +29,14 @@ function(create_executable app_name file_name)
         endif()
     endif()
 
-    target_include_directories(${app_name} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
+    target_include_directories(${app_name} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include ${CMAKE_CURRENT_SOURCE_DIR}/solutions)
     target_compile_definitions(${app_name} PRIVATE RESOURCE_DIR=${CMAKE_CURRENT_SOURCE_DIR}/resource)
 endfunction()
 
+# exercise
+create_executable(exercise1 src/exercise1.cpp)
+
+
+# examples
 create_executable(rotation_example_angle_axis src/rotation_example_angle_axis.cpp)
 create_executable(rotation_example_euler_angles src/rotation_example_euler_angles.cpp)

@@ -18,7 +18,7 @@ int main() {
   monkey_reference->setPosition(0,0,1);
 
   Eigen::Matrix3d xRot, yRot, zRot, rot;
-  double thX = 0.4, thY = M_PI/2., thZ = 1.3;
+  double thX = 1.0, thY = M_PI/2., thZ = 0.1;
 
   xRot << 1,        0,         0,
           0, cos(thX), -sin(thX),
