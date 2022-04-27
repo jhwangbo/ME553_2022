@@ -29,7 +29,7 @@ int main(int argc, char* argv[]) {
     auto ga = getGeneralizedAcceleration(gc, gv);
     gv = gv + ga * world.getTimeStep();
     gc = gc + gv * world.getTimeStep(); // this is called semi-implicit integration. it uses updated velocities
-    cart_pole->getState(gc, gv);
+    cart_pole->setState(gc, gv);
 
     std::this_thread::sleep_for(std::chrono::microseconds(2000));
   }
