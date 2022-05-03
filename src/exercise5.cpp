@@ -12,7 +12,7 @@ int main(int argc, char* argv[]) {
   // create raisim world
   raisim::World world; // physics world
   world.setTimeStep(0.002);
-  auto a1 = world.addArticulatedSystem(std::string(_MAKE_STR(RESOURCE_DIR)) + "/a1/urdf/a1.urdf");
+  auto a1 = world.addArticulatedSystem(std::string(_MAKE_STR(RESOURCE_DIR)) + "/a1/urdf/a1_simplified.urdf");
 
   // a1_simplified configuration
   Eigen::VectorXd gc(a1->getGeneralizedCoordinateDim());
