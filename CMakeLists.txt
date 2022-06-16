@@ -16,3 +16,7 @@ create_executable(exercise7 src/exercise7.cpp)
 # examples
 create_executable(rotation_example_angle_axis src/rotation_example_angle_axis.cpp)
 create_executable(rotation_example_euler_angles src/rotation_example_euler_angles.cpp)
+
+# final exam
+create_executable(final_exam src/final_exam.cpp)
+
